@@ -1,3 +1,3 @@
 def solution(flo):
-    answer = int(flo)
+    answer = flo // 1
     return answer
