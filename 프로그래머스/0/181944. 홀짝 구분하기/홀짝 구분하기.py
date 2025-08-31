@@ -1,7 +1,7 @@
-a = int(input())
-if a % 2 == 0:
-    result = f"{a} is even"
-else:
-    result = f"{a} is odd"
-
-print(result)
+def evenfunc(number):
+    if number%2 == 0:
+        return f"{number} is even"
+    else:
+        return f"{number} is odd"
+        
+print(evenfunc(int(input())))
