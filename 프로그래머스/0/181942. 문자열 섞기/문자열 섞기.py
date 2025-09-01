@@ -1,10 +1,8 @@
 def solution(str1, str2):
-    result = ""
-    for i in range(len(str1)):
-        result += str1[i] + str2[i]
-    return result
+    answer = list(str1)
+    for i, char in enumerate(str2):
+        answer.insert(i*2+1,char)
+    return ''.join(answer)
 
-str1 = ('첫번째 문자열을 입력하세요: ')
-str2 = ('두번째 문자열을 입력하세요: ')
-result = solution(str1,str2)
-print(result)
+    
+    
