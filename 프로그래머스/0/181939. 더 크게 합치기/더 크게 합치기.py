@@ -1,10 +1,10 @@
-def solution(a, b):
-    SA = str(a)
-    SB = str(b)
-    AB = SA + SB
-    BA = SB + SA
-    IAB = int(AB)
-    IBA = int(BA)
-    return max(IAB, IBA)
+def solution(a,b):
+    c = str(a)
+    d = str(b)
+    if (c+d)<(d+c):
+        return int(d+c)
+    else:
+        return int(c+d)
+    
 
     
