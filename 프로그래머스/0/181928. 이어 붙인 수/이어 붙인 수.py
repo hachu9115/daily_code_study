@@ -1,13 +1,10 @@
 def solution(num_list):
-    odd_sum = ''
-    even_sum = ''
+    answer1 = ""
+    answer2 = ""
+    for i in num_list:
+        if i%2==1:
+            answer1 += str(i)
+        else:
+            answer2 += str(i)
+    return int(answer1)+int(answer2)
     
-    for num in num_list:
-        if num % 2 == 0:  # 짝수인 경우
-            even_sum += str(num)
-        else:             # 홀수인 경우
-            odd_sum += str(num)
-    odd_sum = int(odd_sum.lstrip('0'))
-    even_sum = int(even_sum.lstrip('0'))
-    return odd_sum + even_sum
-                                              
