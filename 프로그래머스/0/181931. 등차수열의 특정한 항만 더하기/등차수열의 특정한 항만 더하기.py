@@ -1,6 +1,7 @@
-def solution(a, d, included):
-    total_sum = 0
-    for i in range(len(included)):
+def solution(a,d,included):
+    answer = []
+    for i, included[i] in enumerate(included):
         if included[i]:
-            total_sum += a + i * d
-    return total_sum
+            answer.append(a+d*i)
+    return sum(answer)
+    
