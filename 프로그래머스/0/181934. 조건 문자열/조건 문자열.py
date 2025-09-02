@@ -1,11 +1,9 @@
 def solution(ineq, eq, n, m):
-    if ineq == ">" and eq == "=":
-        return 1 if n >= m else 0
-    elif ineq == "<" and eq == "=":
-        return 1 if n <= m else 0
-    elif ineq == ">" and eq == "!":
-        return 1 if n > m else 0
+    if ineq == ">" and eq == "!":
+        return int(n > m)
     elif ineq == "<" and eq == "!":
-        return 1 if n < m else 0
+        return int(n < m)
+    elif ineq == "<" and eq == "=":
+        return int(n <= m)
     else:
-        return 0
+        return int(n >= m)
