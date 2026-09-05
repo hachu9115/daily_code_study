@@ -1,5 +1,5 @@
 def solution(n):
-    for x in range(1,n+1):
-        if n % x == 1:
-            break
-    return x
+    i=2
+    while n % i != 1:
+        i += 1
+    return i
